@@ -1,0 +1,22 @@
+class account():
+    def __init__(self,balance,account_no):
+        self.balance = balance
+        self.account_no = account_no
+
+
+    def debit(self,abc):
+       sub = self.balance - abc
+       print("current balance after debit is :",sub)
+ 
+
+    def credit(self,az):
+        add = self.balance + az
+        print("current balance after credit is:",add)   
+    
+
+
+shameer = account(1000,88582)
+shameer.debit(50)
+shameer.credit(500)
+print("original balance is :",shameer.balance)
+print("account number is :",shameer.account_no)
