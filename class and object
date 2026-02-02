@@ -1,26 +1,25 @@
-class account():
-    def __init__(self,balance,account_no):
-        self.balance = balance
-        self.account_no = account_no
-
-
-    def debit(self,abc):
-       sub = self.balance - abc
-       print("current balance after debit is :",sub)
- 
-
-    def credit(self,az):
-        add = self.balance + az
-        print("current balance after credit is:",add)   
+class car:
+    color = "white"
     
+    @staticmethod
+    def car_start():
+        print("car started ..")
+        return 
+
+    def car_stop(self):
+        print("car stopped ..")
 
 
-shameer = account(1000,88582)
-shameer.debit(50)
-shameer.credit(500)
-print("original balance is :",shameer.balance)
-print("account number is :",shameer.account_no)
-heloo=123
-main=456
-shameer="hero"
-shahab="zero"
+class toyota_car(car):
+    def __init__(self , name):
+        self.name =name
+
+
+c1=toyota_car("fortuener")
+c2 = toyota_car("land cruiser")
+
+
+print(c2.car_start())
+print(c2.car_stop())
+print(c2.color)
+print(c2.name)
