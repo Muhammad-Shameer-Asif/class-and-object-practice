@@ -1,0 +1,29 @@
+class car:
+    def start(self):
+        print("car started ..")
+
+    @staticmethod
+    def stop():
+        print("car stopped ...")
+
+
+class honda(car):
+    def __init__(self , type):
+        self.type=type
+
+
+class civic(honda):
+    def __init__(self , model):
+        self.model = model
+
+
+c1=honda("petrol")
+print(c1.type)
+
+c1=civic("2026")
+print(c1.model)
+
+c1.start()
+c1.stop()
+
+
