@@ -1,0 +1,15 @@
+class A:
+    varA= "welcome to class A"
+
+class B:
+    varB= "welcome to class B"
+
+class C (A ,B):
+    varC= "welocome to class C"
+
+
+
+L= C()
+print(L.varA)
+print(L.varC)
+print(L.varB)
