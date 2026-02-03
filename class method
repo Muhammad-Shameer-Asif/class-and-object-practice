@@ -1,0 +1,11 @@
+class person():
+    name = "Shahab"
+
+    @classmethod
+    def changename(cls,name):
+        cls.name =name
+
+P1 =person()
+P1.changename("Shameer")
+print(P1.name)
+print(person.name)
