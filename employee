@@ -1,0 +1,22 @@
+class employee:
+    def __init__(self,role,department,salary):
+        self.role=role
+        self.department=department
+        self.salary=salary
+
+
+    def showdetail(self):
+        print("role =",self.role)
+        print("department =" ,self.department)
+        print("salary =",self.salary)
+
+class engineer(employee):
+    def __init__(self,name,age):
+        self.name = name
+        self.age = age
+        super().__init__("data scientist","AI","180k $")
+        
+
+
+S1=engineer("shameer","18")
+S1.showdetail()        
