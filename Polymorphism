@@ -6,7 +6,7 @@ class complex:
     def shownum(self):
         print(self.real,"i","+",self.img,"j")
 
-    def add(obj1,obj2):
+    def __add__(obj1,obj2):
         newreal=obj1.real + obj2.real
         newimg= obj1.img + obj2.img
         return complex(newreal,newimg)
@@ -18,5 +18,5 @@ num1.shownum()
 num2=complex(4,2)
 num2.shownum()
 
-num3 = num1.add(num2)
+num3 = num1 + num2
 num3.shownum()
