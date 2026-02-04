@@ -6,12 +6,13 @@ class marks():
         self.comp=comp
         self.percentage= str((self.phy+self.chem+self.eng+self.comp)/4) + "%"
 
-    @property   
-    def calpercentage(self):
-        self.percentage= str((self.phy+self.chem+self.eng+self.comp)/4) +"%"
+    
+    
 
 S1=marks(45,65,78,86)
 print(S1.percentage)    
 
 S1.phy=55
+print(S1.percentage)
+
 print(S1.percentage)
