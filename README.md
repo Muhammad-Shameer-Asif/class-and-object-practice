@@ -1,1 +1,1 @@
-# class-and-obect
+# class-and-object
