@@ -1,0 +1,26 @@
+class order:
+    def __init__(self,items ,price):
+        self.items=items
+        self.price=price
+
+
+    def __gt__(self,obj2):
+        if (self.price>obj2.price):
+         print(self.items,"is greater in price")
+         return True
+
+        elif (obj2.price>self.price):
+         print(obj2.items,"is greater in price")
+         return True
+
+
+
+        
+
+s1=order("feastables",500)
+s2=order("coca cola",200)
+s1 > s2
+
+s3=order("lays",70)
+s4=order("biscuit",50)
+s3 > s4
